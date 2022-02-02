@@ -1,0 +1,245 @@
+Option Explicit
+
+Private Sub CommandButton1()
+
+[J:J].Select
+    With Selection
+        .NumberFormat = "General"
+        .Value = .Value
+    End With
+
+
+
+[AC:AC].Select
+    With Selection
+        .NumberFormat = "General"
+        .Value = .Value
+    End With
+
+[AL:AL].Select
+    With Selection
+        .NumberFormat = "General"
+        .Value = .Value
+    End With
+
+Dim LastRow As Long
+    Dim i As Long
+    LastRow = Range("AC" & Rows.Count).End(xlUp).Row
+    For i = 2 To LastRow
+        If (Range("AC" & i).Value > 1 And Range("AC" & i).Value < 2201) Then
+            Range("AD" & i).Value = "20"
+            ElseIf (Range("AC" & i).Value >= 2201 And Range("AC" & i).Value < 2501) Then
+            Range("AD" & i).Value = "17"
+            ElseIf (Range("AC" & i).Value >= 2501 And Range("AC" & i).Value < 2801) Then
+            Range("AD" & i).Value = "16"
+            ElseIf (Range("AC" & i).Value >= 2801 And Range("AC" & i).Value < 3101) Then
+            Range("AD" & i).Value = "15"
+            ElseIf (Range("AC" & i).Value >= 3101 And Range("AC" & i).Value < 3401) Then
+            Range("AD" & i).Value = "14"
+            ElseIf (Range("AC" & i).Value >= 3401 And Range("AC" & i).Value < 3701) Then
+            Range("AD" & i).Value = "13"
+            ElseIf (Range("AC" & i).Value >= 3701 And Range("AC" & i).Value < 4001) Then
+            Range("AD" & i).Value = "12"
+            ElseIf (Range("AC" & i).Value >= 4001 And Range("AC" & i).Value < 4301) Then
+            Range("AD" & i).Value = "11"
+            ElseIf (Range("AC" & i).Value >= 4301 And Range("AC" & i).Value < 4601) Then
+            Range("AD" & i).Value = "10"
+            ElseIf (Range("AC" & i).Value >= 4601 And Range("AC" & i).Value < 4901) Then
+            Range("AD" & i).Value = "9"
+            ElseIf (Range("AC" & i).Value >= 4901 And Range("AC" & i).Value < 5201) Then
+            Range("AD" & i).Value = "8"
+            ElseIf (Range("AC" & i).Value >= 5201 And Range("AC" & i).Value < 5501) Then
+            Range("AD" & i).Value = "7"
+            ElseIf (Range("AC" & i).Value >= 5501 And Range("AC" & i).Value < 5801) Then
+            Range("AD" & i).Value = "6"
+            ElseIf (Range("AC" & i).Value >= 5801 And Range("AC" & i).Value < 6101) Then
+            Range("AD" & i).Value = "5"
+            ElseIf (Range("AC" & i).Value >= 6101 And Range("AC" & i).Value < 6401) Then
+            Range("AD" & i).Value = "4"
+            ElseIf (Range("AC" & i).Value >= 6401 And Range("AC" & i).Value < 6701) Then
+            Range("AD" & i).Value = "3"
+            ElseIf (Range("AC" & i).Value >= 6701 And Range("AC" & i).Value < 7001) Then
+            Range("AD" & i).Value = "2"
+            ElseIf (Range("AC" & i).Value >= 7001) Then
+            Range("AD" & i).Value = "1"
+Else: Range("AD" & i).Value = ""
+        End If
+    Next i
+   
+
+LastRow = Range("AC" & Rows.Count).End(xlUp).Row
+    For i = 2 To LastRow
+        If (Range("AL" & i).Value > 1 And Range("AL" & i).Value < 2201) Then
+            Range("AM" & i).Value = "20"
+            ElseIf (Range("AL" & i).Value >= 2201 And Range("AL" & i).Value < 2501) Then
+            Range("AM" & i).Value = "17"
+            ElseIf (Range("AL" & i).Value >= 2501 And Range("AL" & i).Value < 2801) Then
+            Range("AM" & i).Value = "16"
+            ElseIf (Range("AL" & i).Value >= 2801 And Range("AL" & i).Value < 3101) Then
+            Range("AM" & i).Value = "15"
+            ElseIf (Range("AL" & i).Value >= 3101 And Range("AL" & i).Value < 3401) Then
+            Range("AM" & i).Value = "14"
+            ElseIf (Range("AL" & i).Value >= 3401 And Range("AL" & i).Value < 3701) Then
+            Range("AM" & i).Value = "13"
+            ElseIf (Range("AL" & i).Value >= 3701 And Range("AL" & i).Value < 4001) Then
+            Range("AM" & i).Value = "12"
+            ElseIf (Range("AL" & i).Value >= 4001 And Range("AL" & i).Value < 4301) Then
+            Range("AM" & i).Value = "11"
+            ElseIf (Range("AL" & i).Value >= 4301 And Range("AL" & i).Value < 4601) Then
+            Range("AM" & i).Value = "10"
+            ElseIf (Range("AL" & i).Value >= 4601 And Range("AL" & i).Value < 4901) Then
+            Range("AM" & i).Value = "9"
+            ElseIf (Range("AL" & i).Value >= 4901 And Range("AL" & i).Value < 5201) Then
+            Range("AM" & i).Value = "8"
+            ElseIf (Range("AL" & i).Value >= 5201 And Range("AL" & i).Value < 5501) Then
+            Range("AM" & i).Value = "7"
+            ElseIf (Range("AL" & i).Value >= 5501 And Range("AL" & i).Value < 5801) Then
+            Range("AM" & i).Value = "6"
+            ElseIf (Range("AL" & i).Value >= 5801 And Range("AL" & i).Value < 6101) Then
+            Range("AM" & i).Value = "5"
+            ElseIf (Range("AL" & i).Value >= 6101 And Range("AL" & i).Value < 6401) Then
+            Range("AM" & i).Value = "4"
+            ElseIf (Range("AL" & i).Value >= 6401 And Range("AL" & i).Value < 6701) Then
+            Range("AM" & i).Value = "3"
+            ElseIf (Range("AL" & i).Value >= 6701 And Range("AL" & i).Value < 7001) Then
+            Range("AM" & i).Value = "2"
+            ElseIf (Range("AL" & i).Value >= 7001) Then
+            Range("AM" & i).Value = "1"
+        End If
+    Next i
+   
+LastRow = Range("F" & Rows.Count).End(xlUp).Row
+    For i = 2 To LastRow
+        If (Range("F" & i).Value = "G8") Then
+            Range("F" & i).Value = "8"
+	    ElseIf (Range("F" & i).Value = "G9") Then
+            Range("F" & i).Value = "9"
+            ElseIf (Range("F" & i).Value = "G10") Then
+            Range("F" & i).Value = "10"
+            ElseIf (Range("F" & i).Value = "G11") Then
+            Range("F" & i).Value = "11"
+            ElseIf (Range("F" & i).Value = "G12") Then
+            Range("F" & i).Value = "12"
+            ElseIf (Range("F" & i).Value = "G13") Then
+            Range("F" & i).Value = "13"
+            ElseIf (Range("F" & i).Value = "G14") Then
+            Range("F" & i).Value = "14"
+            ElseIf (Range("F" & i).Value = "G15") Then
+            Range("F" & i).Value = "15"
+            ElseIf (Range("F" & i).Value = "G16") Then
+            Range("F" & i).Value = "16"
+        End If
+    Next i
+
+LastRow = Range("D" & Rows.Count).End(xlUp).Row
+    For i = 2 To LastRow
+        If (Range("D" & i).Value = "SARDEGA SIDING") Then
+            Range("C" & i).Value = "MAHALAXMI AREA"
+        End If
+    Next i
+    
+LastRow = Range("D" & Rows.Count).End(xlUp).Row
+    For i = 2 To LastRow
+        If (Range("D" & i).Value = "LAJKURA SIDING NO. 2") Then
+            Range("C" & i).Value = "ORIENT AREA"
+            Range("E" & i).Value = "ORIENT COLLIERY"
+        End If
+    Next i
+
+LastRow = Range("C" & Rows.Count).End(xlUp).Row
+    For i = 2 To LastRow
+        If (Range("C" & i).Value = "LINGARAJ AREA") Then
+        If (Range("F" & i).Value = "12") Then
+        If (Range("B" & i).Value = "RAIL") Then
+        Range("C" & i).Value = "BHUBANESWARI AREA"
+        Range("E" & i).Value = "BHUBANESWARI OCP"
+        End If
+        End If
+        End If
+    Next i
+
+LastRow = Range("D" & Rows.Count).End(xlUp).Row
+    For i = 2 To LastRow
+        If (Range("D" & i).Value = "JAGANNATH SPUR 1" Or Range("D" & i).Value = "JAGANNATH SPUR 2" Or Range("D" & i).Value = "JAGANNATH SPUR 3" Or Range("D" & i).Value = "JAGANNATH SPUR 4") Then
+        Range("C" & i).Value = "BHUBANESWARI AREA"
+        End If
+    Next i
+
+LastRow = Range("C" & Rows.Count).End(xlUp).Row
+    For i = 2 To LastRow
+        If (Range("C" & i).Value = "JAGANNATH AREA") Then
+        Range("C" & i).Value = "1 JAGANNATH AREA"
+        ElseIf (Range("C" & i).Value = "BHUBANESWARI AREA") Then
+        Range("C" & i).Value = "2 BHUBANESWARI AREA"
+        ElseIf (Range("C" & i).Value = "BHARATPUR AREA") Then
+        Range("C" & i).Value = "3 BHARATPUR AREA"
+        ElseIf (Range("C" & i).Value = "LINGARAJ AREA") Then
+        Range("C" & i).Value = "4 LINGARAJ AREA"
+        ElseIf (Range("C" & i).Value = "HINGULA AREA") Then
+        Range("C" & i).Value = "5 HINGULA AREA"
+        ElseIf (Range("C" & i).Value = "KANIHA AREA") Then
+        Range("C" & i).Value = "6 KANIHA AREA"
+        ElseIf (Range("C" & i).Value = "TALCHER AREA") Then
+        Range("C" & i).Value = "7 TALCHER AREA"
+        ElseIf (Range("C" & i).Value = "IB-VALLEY AREA") Then
+        Range("C" & i).Value = "8 IB VALLEY AREA"
+        ElseIf (Range("C" & i).Value = "LAKHANPUR AREA") Then
+        Range("C" & i).Value = "9 LAKHANPUR AREA"
+        ElseIf (Range("C" & i).Value = "BASUNDHARA AREA") Then
+        Range("C" & i).Value = "91 BASUNDHARA AREA"
+        ElseIf (Range("C" & i).Value = "MAHALAXMI AREA") Then
+        Range("C" & i).Value = "92 MAHALAXMI AREA"
+        ElseIf (Range("C" & i).Value = "ORIENT AREA") Then
+        Range("C" & i).Value = "93 ORIENT AREA"
+        End If
+    Next i
+        
+Dim Column As Range: Set Column = Application.Range("AN:AN")
+    Column.Insert Shift:=xlShiftToRight, CopyOrigin:=xlFormatFromRightOrBelow
+Range("AN" & 1).Value = "Finalgrade"
+LastRow = Range("AC" & Rows.Count).End(xlUp).Row
+    For i = 2 To LastRow
+        If (Range("AM" & i).Value > 0) Then
+        Range("AN" & i).Value = Range("AM" & i).Value
+        Else
+        Range("AN" & i).Value = Range("AD" & i).Value
+        End If
+    Next i
+    
+Dim Column1 As Range: Set Column1 = Application.Range("AO:AO")
+    Column1.Insert Shift:=xlShiftToRight, CopyOrigin:=xlFormatFromRightOrBelow
+Range("AO" & 1).Value = "SameUpDown"
+LastRow = Range("AC" & Rows.Count).End(xlUp).Row
+    For i = 2 To LastRow
+        If (Range("AN" & i).Value <> "") Then
+            If (Range("AN" & i).Value = Range("F" & i).Value) Then
+            Range("AO" & i).Value = "Same"
+            ElseIf (Range("AN" & i).Value < Range("F" & i).Value) Then
+            Range("AO" & i).Value = "Above"
+            ElseIf (Range("AN" & i).Value > Range("F" & i).Value) Then
+            Range("AO" & i).Value = "Below"
+            End If
+        End If
+    Next i
+
+Dim Column2 As Range: Set Column2 = Application.Range("A:A")
+    Column2.Insert Shift:=xlShiftToRight, CopyOrigin:=xlFormatFromRightOrBelow
+
+Range("A" & 1).Value = "RRQtyGCVUnqDup"
+
+LastRow = Range("B" & Rows.Count).End(xlUp).Row
+    For i = 2 To LastRow
+        If (Range("K" & i).Value = Range("K" & i + 1).Value) Then
+            If (Range("AD" & i).Value = Range("AD" & i + 1).Value) Then
+                Range("A" & i).Value = "Duplicate"
+            Else
+                Range("A" & i).Value = "Unique"
+            End If
+        Else
+            Range("A" & i).Value = "Unique"
+        End If
+        
+    Next i
+
+End Sub
+
